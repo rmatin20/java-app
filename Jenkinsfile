@@ -74,7 +74,7 @@ node { echo "Starting Pipeline... "
       
        // Upload artifact to Nexus using plugin 
 
-       nexusArtifactUploader artifacts: [[artifactId: pom.artifactId, classifier: '', file: artifactPath, type: pom.packaging]], credentialsId:'admin', groupId: pom.groupId, nexusUrl: '3.238.98.177:8081", nexusVersion: 'nexus3', protocol: 'http', repository: 'devops-test-repo-snapshot/', version: pom.version 
+       nexusArtifactUploader artifacts: [[artifactId: pom.artifactId, classifier: '', file: artifactPath, type: pom.packaging]], credentialsId:'NEXUS_USER', groupId: pom.groupId, nexusUrl: '3.238.98.177:8081", nexusVersion: 'nexus3', protocol: 'http', repository: 'devops-test-repo-snapshot/', version: pom.version 
 
 
        }
