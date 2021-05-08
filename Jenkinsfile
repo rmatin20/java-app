@@ -14,8 +14,8 @@ node { echo "Starting Pipeline... "
        echo "Getting Private Repo"
        git(
        url: 'git@github.com:rmatin20/java-app.git',
-       credentialsId: 'java-app',
-       branch: "master"
+       credentialsId: 'class-java-app',
+       branch: "main"
        )
 
 
